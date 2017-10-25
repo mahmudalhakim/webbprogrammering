@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 6</title>
+</head>
+
+<body>
+    <h1>HTML - Exempel 6</h1>
+    <h2>Ljud i HTML5</h2>
+    <h3>Enkel syntax</h3>
+    <audio src="audio/arcade.mp3" controls>
+        Your browser does not support the audio tag.
+    </audio>
+    <hr>
+    <h3>Alternativ syntax</h3>
+    <audio controls>
+        <source src="audio/arcade.mp3"> 
+            Your browser does not support audio.
+    </audio>
+    <h3>Flera attribut</h3>
+    <h4>Loop</h4>
+    <audio src="audio/arcade.mp3" controls loop></audio>
+
+    <h2>Video i HTML5</h2>
+    <h3>Enkel syntax</h3>
+    <video controls height="500" width="500"
+           src="video/SampleVideo.mp4">
+        Your browser does not support video.
+    </video>
+    <h3>Avancerad syntax</h3>
+    <video controls height="500" width="500">
+        <source src="video/SampleVideo.mp4"> 
+            Your browser does not support video.
+    </video>
+
+    <h2>Bädda in video från Youtube</h2>
+    <iframe width="560" height="315" style="border:0"
+          src="https://www.youtube.com/embed/UB1O30fR-EE" 
+           allowfullscreen>
+    </iframe>
+
+    <h2>Bädda in karta från Google Maps</h2>
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.1212560393876!2d18.108583578499832!3d59.347623716689945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d34de0cfe2d%3A0xa12515087508beaf!2sNewton+Kompetensutveckling+AB!5e0!3m2!1ssv!2sse!4v1508935191370" 
+    width="800" height="400" style="border:0" allowfullscreen>
+    </iframe>
+</body>
+
+</html>
