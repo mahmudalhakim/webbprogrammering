@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 8</title>
+</head>
+<body>
+    <h1>JavaScript - Exempel 8</h1>
+    <h2>Stränghantering</h2>
+    <h3 id="demo"></h3>
+    <p>Titta i webbläsarens console</p>    
+    <script>
+        var demo = document.getElementById("demo");
+
+        var name = 'Mahmud "Al" Hakim';
+        console.log(name);
+        
+        name = "Mahmud 'Al' Hakim";
+        console.log(name);
+        
+        name = 'Mahmud \'Al\' Hakim';
+        console.log(name);
+        
+        name = "\\ Mahmud \"Al\" \n Hakim \\";
+        console.log(name);
+        demo.innerHTML = name;
+
+        console.log(name[0]);  // M
+        console.log(name[10]); // undefined
+        console.log(name.length); // Egenskap
+        console.log(name[name.length-1]); // Egenskap
+        console.log(name.toUpperCase()); // Metod
+        console.log(name.toLowerCase()); // Metod
+        // Konvertera en sträng till en array
+        var nameArray = name.split(" ");
+        console.log(nameArray);
+        nameArray = name.split(""); // OBS!
+        console.log(nameArray);
+        console.log(nameArray[0]);
+
+        var msg = "Hej " + name + "<br>" + 
+                  "Hur mår du idag?";
+        demo.innerHTML = msg;
+        // Template Literals
+        msg = 
+        `Hej igen ${name} <br>
+        Hur är läget?<br>
+        Äntligen har vi fått 
+        string interpolation i JS :-)
+        `;
+        demo.innerHTML += msg;
+    </script>
+</body>
+</html>
