@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 6</title>
+</head>
+<body>
+    <h1>JavaScript - Exempel 6</h1>
+    <h2>Fält (Array)</h2>
+    <p id="fname"></p>
+    <p id="lname"></p>
+    <p id="person1"></p>
+    <p id="person2"></p>
+    <p id="person3"></p>
+    
+    <script>
+        // Skapa ett fält (array) i JavaScript 
+        // kallas även "lista" eller "matris" 
+        var enArray = []; // Fält skapas med hakparenteser []
+        var person1 = ["Mahmud", "Al Hakim", 1973];
+        document.getElementById("fname").innerHTML = person1[0];
+        document.getElementById("lname").innerHTML = person1[1];
+        document.getElementById("person1").innerHTML = person1[0] + person1[2];
+        document.getElementById("person2").innerHTML = person1;
+        document.getElementById("person3").innerHTML = person1.join(" ");
+    
+    </script>
+</body>
+</html>

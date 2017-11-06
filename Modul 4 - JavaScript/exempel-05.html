@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 5</title>
+</head>
+
+<body>
+    <h1>JavaScript - Exempel 5</h1>
+    <h2>Variabler,  datatyper och konstanter</h2>
+    <h3 id="demo"></h3>
+    <script>
+        var text = "Sträng skrivs alltid inom citationstecken";
+        console.log(text);
+        var text2 = 'Det funkar även med enkla citat';
+        console.log(text2);
+        var tal1 = 95.50; // Numnber  (flyttal)
+        var tal2 = 5;     // Numnber  (heltal)
+        var total = tal1*tal2;
+        console.log(total);
+
+        tal1 = '5';
+        console.log(typeof(tal1));
+        tal2 = '10';       
+        var total = tal1 * tal2; // OK
+        console.log(total);
+        total = tal1 / tal2;     // OK
+        console.log(total);
+        total = tal1 - tal2;     // OK
+        console.log(total);
+        total = tal1 + tal2;     // OBS! Farligt! (JavaScript adderar två stränger)
+        console.log(total);      // total = 510 !!! 
+        tal1 = Number(tal1);     // Omvandla string till number
+        console.log(typeof(tal1));
+        tal2 = Number(tal2);     // Omvandla string till number
+        total = tal1 + tal2;     // OK
+        console.log(total);
+        var bool = false;        // Boolean
+        console.log(bool);
+        var test;                // undefined
+        console.log(test);
+
+
+        /*
+            Konstanter i JavaScipt 2015
+        */
+        const webmaster = "Mahmud Al Hakim";
+        const sitetilte = "Newton Kompetensutveckling";
+        console.log(webmaster);        
+        webmaster = "Kalle Anka";
+        console.log(webmaster); // OBS! Genererar ett felmeddelande
+        
+        document.getElementById("demo").innerHTML = total;
+
+    </script>
+
+</body>
+
+</html>
