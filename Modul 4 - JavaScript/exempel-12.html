@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 12</title>
+</head>
+<body>
+    <h1>Arbeta med objekt i JavaScript</h1>
+    <script>
+
+
+       // Skapa ett objekt med Constructor Notation
+       var person1 = new Object(); 
+       // OBS! person1 blir en referens till objektet
+       
+       // Lägg till en egenskap (property)
+       person1.name = "Mahmud"; 
+
+       // Lägg till en metod (method)
+       person1.hello = function(){
+           return "Hello " + person1.name; // OBS! Vi måste jobba med referenser
+       };
+
+       // Ändra innehållet i en egenskap
+       person1.name = "Kalle";
+
+       // Anropa metoden hello() med hjälp av referensen
+       console.log(person1.hello());
+       
+       // Lägga till flera egenskaper
+       person1.age = 43;
+       console.log("Ålder: " + person1.age);
+       
+
+       // Skapa ett objekt med "Literal Notaion"
+       var person2 = {
+           firstname  : "Mahmud",    // En egenskap
+           lasttname  : "Al Hakim",    // En egenskap
+
+           hello : function(){ // En metod
+               console.log('Hej ' + this.firstname);
+              // return 1;
+           }   ,
+           fullname : function(){
+               // console.log(this.firstname + " " + this.lasttname)
+               return this.firstname + " " + this.lasttname;
+           }
+       };      
+       // {} = new Object()
+
+       console.log(person2.fullname());
+       
+
+
+       // Skapa en klass 
+       class Person{
+           constructor(firstname, lastname){
+               this.firstname = firstname;
+               this.lastname = lastname;
+           }
+           fullname(){
+               return this.firstname + " " + this.lastname;
+           }
+       }
+       // Skapa en instans av klassen (objekt)
+       var person3 = new Person("Erik","Larsson");
+       console.log(person3);
+       console.log(person3.firstname);
+       console.log(person3.lastname);
+       console.log(person3.fullname());
+       
+       var person4 = new Person("Emil","Svensson");
+
+
+
+    </script>
+</body>
+</html>

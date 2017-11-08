@@ -26,3 +26,11 @@ function moms(pris , momssats){
     var result = pris * (1 + momssats/100);
     return result.toFixed(2);
 }
+
+function momsArray(pris){
+    return [ 
+            pris * 1.25,
+            pris * 1.12,
+            pris * 1.06
+           ];
+}

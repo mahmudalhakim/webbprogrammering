@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1>Att arbeta med datum-objektet: Date</h1>
-    
+    <h2 id="time"></h2>
+
     <p>Copyright &copy; <span id="year"></span></p>
 
     <script>
@@ -16,6 +17,33 @@
         //  console.log(datum.getFullYear());
         var el = document.getElementById("year");
         el.innerHTML = datum.getFullYear();
+
+       // console.log(datum.getHours() + ":" + datum.getMinutes());
+       document.getElementById("time").innerHTML = 
+             datum.getHours() + ":" + 
+             datum.getMinutes() + ":" +
+             datum.getSeconds();
+    
+      // En live klocka i JavaScript
+      var myVar = setInterval(klocka, 1000);
+
+      function klocka() {
+        var d = new Date();
+        document.getElementById("time").innerHTML = d.toLocaleTimeString();
+        // Metoden toLocaleTimeString() ersätter dessa rader
+        //          datum.getHours() + ":" + 
+        //          datum.getMinutes() + ":" +
+        //          datum.getSeconds();
+      }
+
+
+    // Alternativ syntax
+        
+    //   setInterval(function klocka() {
+    //         var d = new Date();
+    //         document.getElementById("time").innerHTML = 
+    //         d.toLocaleTimeString();   }   , 1000 )
+
     </script>
 </body>
 </html>
