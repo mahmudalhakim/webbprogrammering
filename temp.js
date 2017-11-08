@@ -32,3 +32,8 @@
         demo.innerHTML = d.toLocaleTimeString();    
     }
     setInterval(klocka ,1000);
+
+
+    
+
+

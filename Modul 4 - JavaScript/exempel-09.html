@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exempel 9</title>
+
+
     <script>
-      function hej(){
-          alert("Hej från en funktion!");
-      }
-      function hej2(msg){
-          alert(msg);
-      }
+        // En parameterlös funktion
+        function hej() {
+            alert("Hej från en funktion!");
+        }
+        // En funktion med en parameter
+        function hej2(msg) {
+            alert(msg);
+        }
     </script>
+
+
 </head>
+
 <body>
     <h1>JavaScript - Exempel 9</h1>
     <h2>Funktioner</h2>
-    <h2>Pris inkl. moms</h2>
-    <p id="demo"></p>
+
     <!-- Anropa funktioner i samma dokument -->
     <script>
-       // hej(); // Funktionsanrop     
-       //  hej2("Detta är ett argument som skickas till funktionen hej2()");   
-       
-       </script>
-
-<!-- Anropa funktioner från en separat JS-fil-->
-<script src="exempel-09.js"></script>
-<script>
-    // hello();
-    var demo = document.getElementById("demo");
-    demo.innerHTML = moms25(100);
+        hej(); // Funktionsanrop     
+        hej2("Detta är ett argument som skickas till funktionen hej2()");
     </script>
-    
+
+    <!-- Anropa funktioner från en separat JS-fil-->
+    <script src="exempel-09.js"></script>
+    <script>
+        hello();
+    </script>
+
 </body>
 </html>

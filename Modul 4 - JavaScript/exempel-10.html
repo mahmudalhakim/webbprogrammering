@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 10</title>
+    <script src="exempel-10.js"></script>
+</head>
+<body>
+    <h1>Att arbeta med funktioner</h1>
+    <h2>Momsberäkning</h2>
+
+    <h3>Pris exkl. moms:  
+        <strong id="prisexklmoms"></strong> </h3>
+    <h3>Pris inkl. moms (25%): 
+        <strong id="prisinklmoms25"></strong> </h3>
+ 
+    <h3>Pris inkl. moms (12%): 
+        <strong id="prisinklmoms12"></strong> </h3>
+ 
+    <h3>Pris inkl. moms (6%): 
+        <strong id="prisinklmoms6"></strong> </h3>
+    
+    <script>
+        var pris = 495;
+        var el = document.getElementById("prisexklmoms");
+        el.innerHTML = pris;
+        
+        el = document.getElementById("prisinklmoms25");
+        el.innerHTML = moms25(pris);
+
+
+        el = document.getElementById("prisinklmoms12");
+        el.innerHTML = moms12(pris);
+        el = document.getElementById("prisinklmoms6");
+        el.innerHTML = moms6(pris);
+        
+        // Ett bättre sätt arbeta med just detta problem
+        el = document.getElementById("prisinklmoms25");
+
+        // Anopa funktionen moms med två argument
+        el.innerHTML= moms(pris, 25);
+
+        el = document.getElementById("prisinklmoms12");
+        el.innerHTML= moms(pris, 12);
+
+        el = document.getElementById("prisinklmoms6");
+        el.innerHTML= moms(pris, 6);
+
+
+    </script>
+</body>
+</html>
