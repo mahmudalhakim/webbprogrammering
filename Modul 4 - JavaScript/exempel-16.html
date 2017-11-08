@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 16</title>
+</head>
+
+<body>
+    <h1>Arbeta med iterationer (upprepningar)</h1>
+    <h2>While-satsen</h2>
+    <script>
+        var a = 1;
+        while(a < 10){
+            document.write(a);
+            a++;
+        }
+    </script>
+    <h2>For-satsen</h2>
+    <script>
+        for(var a = 1 ; a<=10 ; a++){
+            document.write(a + " ");
+        }
+
+        document.write("<hr>");
+
+        // Visa alla udda tal mellan 1 och 10 med en for-sats
+        for(var a = 1; a <=10 ; a=a+2){
+            document.write(a + " ");
+        }
+        document.write("<hr>");
+
+        // Visa alla jämna tal mellan 1 och 10 med en for-sats
+        for(var a = 0; a <=10 ; a=a+2){
+            document.write(a + " ");
+        }
+
+        document.write("<hr>");
+
+        document.write("<table style='border:1px solid red'>");
+        var x = 1;
+        while(x <= 10){
+            document.write("<tr>");
+            for(var y = 1 ; y <= 10 ; y++){
+                document.write("<td style='border:1px solid maroon'>"+
+                                x*y + 
+                               "</td>");
+            }
+            document.write("</tr>");
+            x++;
+        }
+        document.write("</table>");
+        
+
+
+        var x = 1;
+        while(x <= 10){
+            for(var y = 1 ; y <= 10 ; y++){
+                document.write(x + "&times;" + y + "=" + x*y + "<br>");
+            }
+            document.write("<br>");
+            x++;
+        }
+        
+
+    </script>
+    <br><br><br><br><br>
+</body>
+
+</html>

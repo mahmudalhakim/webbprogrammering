@@ -20,6 +20,36 @@
     onmouseover="document.body.bgColor='yellow' ">
     <img src="images/green.png" alt="green" 
     onmouseover="document.body.bgColor='green' ">
+
+    <hr>
+
+    <img id="shop" src="images/shopcart1.png" alt=""
+         onmouseover="document.getElementById('shop').src = 'images/shopcart2.png'"
+         onmouseout="document.getElementById('shop').src = 'images/shopcart1.png'"
+    >
+
+    <!-- Alternativ syntax -->
+    
+    <img id="shop" src="images/shopcart1.png" alt=""
+         onmouseover="this.src = 'images/shopcart2.png'"
+         onmouseout="this.src = 'images/shopcart1.png'"
+    >
+
+    <h2>Events och CSS</h2>
+
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde iure aut numquam recusandae harum ad possimus libero nam sit deleniti non, ea omnis id nemo. Quasi aspernatur placeat explicabo similique!</p>
+    <button 
+      onclick="document.getElementById('demo').style.display='none'">
+        Dölj
+    </button>
+    <button 
+      onclick="document.getElementById('demo').style.display='block'">
+        Visa
+    </button>
+
+<br><br><br><br><br><br>
+
+
 </body>
 
 </html>

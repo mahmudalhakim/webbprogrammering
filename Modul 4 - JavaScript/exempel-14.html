@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 14</title>
+</head>
+
+<body>
+    <h1>Arbeta med Prompt</h1>
+    <h2 id="demo">Hej</h2>
+    <h3 id="plus"></h3>
+    <h3 id="minus"></h3>
+    <h3 id="multiplikation"></h3>
+    <h3 id="division"></h3>
+    <script>
+      // var name = prompt("Vad heter du?");
+      console.log(name);
+      document.getElementById("demo").innerHTML += " " + name;
+      
+      // Övning
+      var tal1 = prompt("Ange tal 1");
+      var tal2 = prompt("Ange tal 2");
+      var summa = Number(tal1) + Number(tal2);
+      document.getElementById("plus").innerHTML = summa;
+      document.getElementById("minus").innerHTML = tal1 - tal2;
+      document.getElementById("multiplikation").innerHTML = tal1 * tal2;
+      document.getElementById("division").innerHTML = tal1 / tal2;;
+
+
+    </script>
+</body>
+
+</html>
