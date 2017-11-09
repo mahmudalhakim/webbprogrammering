@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 9</title>
+    <style>
+    .important{
+        color:red;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <h1>jQuery - Exempel 9</h1>
+    <h2>Events och CSS-Klasser</h2>
+    <button id="add">Klicka här för att lägga till en CSS-Klass</button>
+    <button id="remove">Klicka här för att ta bort en CSS-Klass</button>
+    <button id="toggle">Klicka här för att lägga till/ ta bort en CSS-Klass</button>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus earum soluta cum a nisi ratione, enim commodi reprehenderit ipsa consectetur consequuntur quisquam? Nesciunt porro voluptate reiciendis, laudantium, optio hic officia rem facere labore libero itaque numquam temporibus quia nam consequuntur earum a fugiat ipsam autem amet, at assumenda neque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel corporis reprehenderit, enim autem, praesentium fugit aliquam fugiat eius illo quam vitae, aspernatur totam impedit reiciendis tempora itaque amet repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel corporis reprehenderit, enim autem, praesentium fugit aliquam fugiat eius illo quam vitae, aspernatur totam impedit reiciendis tempora itaque amet repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel corporis reprehenderit, enim autem, praesentium fugit aliquam fugiat eius illo quam vitae, aspernatur totam impedit reiciendis tempora itaque amet repellendus.</p>
+    
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Klicka på knappen med id="add" för att lägga till
+            // CSS-klassen important på ett element med id="demo"
+            $("#add").click(function(){
+                $("#demo").addClass("important");
+            });
+            
+            $("#remove").click(function(){
+                $("#demo").removeClass("important");                
+            });
+
+            $("#toggle").click(function(){
+                $("#demo").toggleClass("important");
+            });
+            
+        }); // Avslutar ready
+    </script>
+    
+</body>
+</html>

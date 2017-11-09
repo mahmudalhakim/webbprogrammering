@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 12</title>
+</head>
+<body>
+    <h1>jQuery - Exempel 12</h1>
+    <h2>Show and Hide</h2>
+   
+    <button id="visa">Visa</button>
+    <button id="dolj">Dölj</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio libero sequi vel laboriosam ipsum, officiis repellendus nulla, vitae in eaque id soluta earum deleniti, iste illo fugiat ea autem labore.q
+        <img src="http://via.placeholder.com/300x300" alt="">
+    </p>
+   
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#dolj").click(function(){
+              $("p").hide(1000);
+          });
+          $("#visa").click(function(){
+              $("p").show(1000);
+          });
+
+        }); // Avslutar ready
+    </script>
+    
+</body>
+</html>

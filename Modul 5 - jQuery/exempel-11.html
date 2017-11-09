@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 11</title>
+</head>
+<body>
+    <h1>jQuery - Exempel 11</h1>
+    <h2>Focus och Blur</h2>
+    Namn <br>
+    <input type="text"> <br>
+    Epost <br>
+    <input type="text">
+   
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+          
+            $("input").focus(function(){
+                $(this).css("background", "gold");
+            });
+            
+            $("input").blur(function(){
+                $(this).css("background", "white");
+            });
+
+
+        }); // Avslutar ready
+    </script>
+    
+</body>
+</html>

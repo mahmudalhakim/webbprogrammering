@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 10</title>
+</head>
+<body>
+    <h1>jQuery - Exempel 10</h1>
+    <h2>Mer om events</h2>
+
+    <p id="demo">Peka här för att visa mer information</p>
+    <p id="info" style="display: none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel corporis reprehenderit, enim autem, praesentium fugit aliquam fugiat eius illo quam vitae, aspernatur totam impedit reiciendis tempora itaque amet repellendus.
+    </p>
+    
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+          
+            $("#demo").mouseenter(function(){
+                $("#info").show();
+            })
+
+            $("#demo").mouseleave(function(){
+                $("#info").hide();
+            });
+
+            // Eller koppla på flera events efter varandra (Chaining)
+            // Så här...
+            $("#demo").mouseenter(function(){
+                $("#info").show();
+            }).mouseleave(function(){
+                $("#info").hide();
+            });
+
+        }); // Avslutar ready
+    </script>
+    
+</body>
+</html>

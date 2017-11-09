@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exempel 8</title>
+</head>
+<body>
+    <h1>jQuery - Exempel 8</h1>
+    <h2>Events och CSS</h2>
+    <button>Klicka här</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus earum soluta cum a nisi ratione, enim commodi reprehenderit ipsa consectetur consequuntur quisquam? Nesciunt porro voluptate reiciendis, laudantium, optio hic officia rem facere labore libero itaque numquam temporibus quia nam consequuntur earum a fugiat ipsam autem amet, at assumenda neque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel corporis reprehenderit, enim autem, praesentium fugit aliquam fugiat eius illo quam vitae, aspernatur totam impedit reiciendis tempora itaque amet repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel corporis reprehenderit, enim autem, praesentium fugit aliquam fugiat eius illo quam vitae, aspernatur totam impedit reiciendis tempora itaque amet repellendus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vel corporis reprehenderit, enim autem, praesentium fugit aliquam fugiat eius illo quam vitae, aspernatur totam impedit reiciendis tempora itaque amet repellendus.</p>
+    
+    <script src="jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Klicka på knappen för att ändra CSS på alla p-taggar
+            $("button").click(function(){
+                $("p").css("background", "yellow");  
+            });// Avslutar click      
+            
+            // Klicka på ett valfritt stycke (p) för att ändra bakgrundsfärgen
+            $("p").click(function(){
+                $(this).css("background", "aqua");
+            }); // Avslutar click
+            
+        }); // Avslutar ready
+    </script>
+    
+</body>
+</html>
