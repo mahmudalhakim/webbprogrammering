@@ -13,7 +13,13 @@
     
     // Vi får inte lägga mellanslag
     // echo $fname $lname; // Parse Error
-    echo $fname,$lname; // OK  (OBS! problem med parenterser)
+
+    // Du kan skicka flera argument med kommatecken
+    echo $fname,$lname; // OK 
+
+    // OBS! problem med parenterser (vid flera argument)
+    // echo ($fname,$lname); // Parse error
+    echo ($fname),($lname); // Parenteser runt varje argument funkar!
 
    
 ?>
