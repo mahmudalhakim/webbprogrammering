@@ -36,6 +36,27 @@
     ?>
 
 
+    <h2>Skriv ut GET</h2>
+    <?php
+    echo "<pre>";
+    print_r($_GET);
+    echo "</pre>";
+    ?>
+
+    <h2>Skriv ut POST</h2>
+    <?php
+    echo "<pre>";
+    print_r($_POST);
+    echo "</pre>";
+    ?>
+
+    <h2>Skriv ut SERVER</h2>
+    <?php
+    echo "<pre>";
+    print_r($_SERVER);
+    echo "</pre>";
+    ?>
+
 
 
 </body>
