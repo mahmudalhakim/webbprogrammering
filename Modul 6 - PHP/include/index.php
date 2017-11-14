@@ -1,6 +1,5 @@
 <?php 
-    include "functions.php"; 
-    $page_title = "Hem |";
+    $page_title = "Hem";
     include "header.php" ;
 ?>
 

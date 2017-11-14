@@ -1,6 +1,5 @@
 <?php 
-    include "functions.php"; 
-    $page_title = "Kontakt |";
+    $page_title = "Kontakt";
     include "header.php" ;
 ?>
 

@@ -1,6 +1,5 @@
-<?php 
-    include "functions.php"; 
-    $page_title = "Om oss |";
+<?php
+    $page_title = "Om oss";
     include "header.php" ;
 ?>
 
