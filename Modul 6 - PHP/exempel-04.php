@@ -1,6 +1,6 @@
 <?php
     $webmaster = "Mahmud Al Hakim";
-    $title     = "Web Academy";
+    $title     = "Exempel 4";
     $address   = "Malmvägen 1, 111 12 Stockholm";
 ?>
 <!DOCTYPE html>

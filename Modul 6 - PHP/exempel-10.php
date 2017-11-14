@@ -10,10 +10,8 @@
     <h1>PHP - Exempel 10</h1>
     <h2>Hämta data via URLen (Webbadress)</h2>
     <h3>Formulär via metoden get</h3>
-    <!-- <form action="<?php // echo $_PHP_SELF ?>"   > -->
-    
 
-    <form action="exempel-10.php" method="get">
+    <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="get">
         Ange ditt namn: 
         <input type="text" name="firstname">
         <input type="submit">
@@ -24,10 +22,10 @@
         echo "Hej $name";
     ?>
     <hr>
-    <h3>Formulär via metoden post</h3>
 
-    <form action="exempel-10.php" method="post">
-        Ange ditt lösenord: 
+    <h3>Formulär via metoden post</h3>
+    <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post">
+    Ange ditt lösenord: 
         <input type="password" name="password">
         <input type="submit">
     </form>
