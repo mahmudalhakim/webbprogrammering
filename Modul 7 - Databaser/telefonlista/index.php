@@ -9,7 +9,7 @@
   <body class="container">
     <h1>Mahmuds Telefonlista</h1>
 
-    <form action="insert.php" method="get" class="form-inline">
+    <form action="insert.php" method="post" class="form-inline">
 
     <label for="namn">Namn</label>
     <input type="text" name="namn" id="namn"
@@ -25,6 +25,9 @@
     
     </form>
 
+
+    <!-- Hämta data från databasen -->
+    <?php include 'select.php' ?>
 
 
     <!-- Optional JavaScript -->
