@@ -38,9 +38,8 @@ CREATE TABLE `kontakt` (
 --
 
     INSERT INTO `kontakt` (`namn`, `telefon`) VALUES
-    ('Mahmud', '070-1234567'),
-    ('Madi', '076-5534567'),
-    ('Kalle', '076-1234567');
+    ('Mahmud Al Hakim', '070-1234567'),
+    ('Kalle Anka', '076-1234567');
 
 --
 -- Index för dumpade tabeller
