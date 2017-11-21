@@ -3,7 +3,7 @@
 require('../telefonlista/database.php');
 $query = "SELECT * FROM kontakt";
 $table = mysqli_query($connection, $query) 
-          or die(mysqli_error($connection));
+         or die(mysqli_error($connection));
 $tempArray = array();
 while($row = $table->fetch_assoc() ){
     $tempArray[] = $row;
