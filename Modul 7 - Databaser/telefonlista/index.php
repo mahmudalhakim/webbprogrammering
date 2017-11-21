@@ -12,12 +12,12 @@
     <form action="insert.php" method="post" class="form-inline">
 
     <label for="namn">Namn</label>
-    <input type="text" name="namn" id="namn"
+    <input type="text" name="namn" id="namn" required
            class="form-control mx-3"
            placeholder="Ange ett namn">
 
     <label for="telefon">Telefon</label>
-    <input type="text" name="telefon" id="telefon"  
+    <input type="tel" name="telefon" id="telefon"  required
            class="form-control mx-3"
            placeholder="Ange telefon/mobil">
     
