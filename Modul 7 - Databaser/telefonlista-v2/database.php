@@ -1,7 +1,7 @@
 <?php
 $dbHost = "localhost"; 
-$dbUser = "mahmudalhakim";
-$dbPass = "TbHONG8qGAiplM58";
+$dbUser = "root";
+$dbPass = "";
 $dbName = "telefonlista";
 
 $connection = 
