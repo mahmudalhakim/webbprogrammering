@@ -6,14 +6,15 @@
 require('database.php');
 
 // Hämta data via URlen (med GET)
-$telefon = $_GET['telefon'];
+if(isset($_GET['telefon'])){
+    $telefon = $_GET['telefon'];
 
-// Skapa SQL-satsen
-$query = "DELETE FROM kontakt WHERE telefon = '$telefon'";
+    // Skapa SQL-satsen
+    $query = "DELETE FROM kontakt WHERE telefon = '$telefon'";
 
-// Exekvera SQL-satsen
-mysqli_query($connection, $query) or die(mysqli_error($connection));
-
+    // Exekvera SQL-satsen
+    mysqli_query($connection, $query) or die(mysqli_error($connection));
+}
 // Gå till filen index.php
 header('Location: index.php');
 

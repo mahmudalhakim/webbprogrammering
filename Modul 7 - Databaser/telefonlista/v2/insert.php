@@ -12,6 +12,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 // Gå till filen index.php
 header('Location: index.php');
 
+
+
+
+
+
+
 // OBS! Bortkommentera header vid felsökning
 echo "$namn med följande telefonnummer $telefon har lagts till databasen.";
 echo "<hr>---------------   Felsökning   ----------------------<br>";

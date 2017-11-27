@@ -1,6 +1,8 @@
 <?php
-include ('header.php');
-require('database.php');
+include ('../header.php');
+echo '<p><a href="../">Länk till butiken</a></p>';
+
+require('../database.php');
 $query = "SELECT Kundnummer, Namn FROM Kund ORDER BY Namn";
 $kunder = mysqli_query($connection,$query)
 or die(mysqli_error($connection));	
@@ -8,9 +10,7 @@ or die(mysqli_error($connection));
 <form class="form-inline my-3" action="insert.php" method="post">
 <select name="kund" class="form-control mx-2">
     <?php while($row = $kunder->fetch_assoc()){ ?>
-       <option value="<?php echo $row['Kundnummer'] ?>"> 
-           <?php echo $row['Namn'] ?> 
-       </option>
+       <option value="<?php echo $row['Kundnummer'] ?>"> <?php echo $row['Namn'] ?> </option>
     <?php } ?>
 </select>
 <?php
@@ -20,9 +20,7 @@ or die(mysqli_error($connection));
 ?>
 <select name="film" class="form-control mx-2">
     <?php while($row = $filmer->fetch_assoc()){ ?>
-       <option value="<?php echo $row['FilmID'] ?>"> 
-           <?php echo $row['Titel'] ?> 
-       </option>
+       <option value="<?php echo $row['FilmID'] ?>"> <?php echo $row['Titel'] ?> </option>
     <?php } ?>
 </select>
   <button type="submit" class="btn btn-outline-primary">Hyr ut</button>
@@ -30,7 +28,7 @@ or die(mysqli_error($connection));
 <?php
 $query = "SELECT K.Namn, K.kundnummer, F.Titel, F.FilmID, U.UtDatum
 FROM Uthyrning U, Kund K, Film F
-WHERE U.InDatum IS NULL 
+WHERE U.InDatum IS NULL
 AND K.Kundnummer = U.Kund
 AND F.FilmID = U.Film
 ORDER BY K.Namn";

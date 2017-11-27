@@ -13,15 +13,14 @@ $telefon = $_GET['telefon'];
 $sql = "SELECT * FROM kontakt WHERE telefon='$telefon'";
 $tabell = mysqli_query($connection, $sql) 
     or die(mysqli_error($connection));
+// Vi får tillbaka en rad som lagras i $tabell
 
 // Visa ett formulär och fyll textfälten från databasen
 if($rad = $tabell->fetch_assoc()) :
 ?>
 
 <form action="" method="post">
-
-  <div class="row">
-    
+  <div class="row">    
     <div class="form-group col-md-5">
       <input type="text" name="namn" required
            class="form-control"
@@ -65,11 +64,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 include 'footer.php';
 
 // Felsökning
-print("<hr><pre>My GET ");
-print_r($_GET);
-print("</pre>");
-print("<pre>My POST ");
-print_r($_POST);
-print("</pre>");
+
+// print("<hr><pre>My GET ");
+// print_r($_GET);
+// print("</pre>");
+// print("<pre>My POST ");
+// print_r($_POST);
+// print("</pre>");
 
 ?>
