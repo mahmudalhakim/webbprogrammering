@@ -57,13 +57,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
      echo "<script> document.location = 'index.php?msg=$msg'; </script>";
 }
 
-echo "<hr>---------------   Felsökning   ----------------------<br>";
-print ("<pre>My POST ");
-print_r($_POST);
-print ("</pre>");
-print ("<pre>My GET ");
-print_r($_GET);
-print ("</pre>");
+// echo "<hr>---------------   Felsökning   ----------------------<br>";
+// print ("<pre>My POST ");
+// print_r($_POST);
+// print ("</pre>");
+// print ("<pre>My GET ");
+// print_r($_GET);
+// print ("</pre>");
 ?>
 
 </body>
